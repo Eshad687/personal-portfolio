@@ -3,20 +3,20 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
+
 
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Button } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 
 
-import LogoutIcon from '@mui/icons-material/Logout';
-import LoginIcon from '@mui/icons-material/Login';
+
 
 const Navigation = () => {
     // getting data from authentication context api
@@ -83,7 +83,15 @@ const Navigation = () => {
 
             </MenuItem>
             <MenuItem>
-                <Button  > explore </Button>
+                <Button  > About Me </Button>
+
+            </MenuItem>
+            <MenuItem>
+                <Button  > Projects </Button>
+
+            </MenuItem>
+            <MenuItem>
+                <Button  > Contact Me </Button>
 
             </MenuItem>
 
@@ -102,8 +110,10 @@ const Navigation = () => {
 
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <Button sx={{ color: 'white' }} > Home </Button>
-                        <Button sx={{ color: 'white' }}> explore </Button>
+                        <Button  > <NavLink style={{ textDecoration: "none", color: "#fff" }} to="/home">Home</NavLink></Button>
+                        <Button > <HashLink style={{ textDecoration: "none", color: "#fff" }} to="/home#aboutMe">About Me</HashLink> </Button>
+                        <Button sx={{ color: 'white' }} > Projects </Button>
+                        <Button sx={{ color: 'white' }}> Contact Me </Button>
 
 
 
