@@ -5,6 +5,7 @@ import Particles from "react-tsparticles";
 import Home from './Pages/Home/Home/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProjectDetails from './Pages/ProjectDetails/ProjectDetails/ProjectDetails';
+import Blogs from './Pages/Blogs/Blogs';
 function App() {
   return (
     <>
@@ -94,6 +95,9 @@ function App() {
 
           </Route>
           <Route path="/home" element={<Home />}>
+
+          </Route>
+          <Route path="/blogs" element={<Blogs />}>
 
           </Route>
           <Route path="/:id" element={<ProjectDetails />}>

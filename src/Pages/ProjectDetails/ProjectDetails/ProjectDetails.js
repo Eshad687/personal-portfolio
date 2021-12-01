@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import { useParams } from 'react-router';
 import Navigation from '../../Home/Navigation/Navigation';
+import CustomButton from '../../Styled Components/CustomButton';
 
 const ProjectDetails = () => {
     const details = [
@@ -20,14 +21,25 @@ const ProjectDetails = () => {
                 <Typography variant="h2" sx={{ color: "springgreen", textAlign: "center" }}>
                     {details[index].title}
                 </Typography>
+                <Box sx={{ textAlign: 'center' }}>
+                    <CustomButton href={details[index].web} target="_blank" sx={{ m: 2 }}>
+                        Live Website
+                    </CustomButton>
+                    <CustomButton href={details[index].gitc} target="_blank" sx={{ m: 2 }}>
+                        Github Client Side
+                    </CustomButton>
+                    <CustomButton href={details[index].gits} target="_blank" sx={{ m: 2 }}>
+                        Github Server Side
+                    </CustomButton>
+                </Box>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} style={{ position: 'sticky' }}>
                         <img width="100%" height="400px" src={details[index].img1} alt="" />
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} style={{ position: 'sticky' }}>
                         <img width="100%" height="400px" src={details[index].img2} alt="" />
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} style={{ position: 'sticky' }}>
                         <img width="100%" height="400px" src={details[index].img3} alt="" />
                     </Grid>
 

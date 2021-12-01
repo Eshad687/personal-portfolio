@@ -17,7 +17,7 @@ const ContactMe = () => {
             });
     };
     return (
-        <Container sx={{ mt: 10, mr: '10px' }}>
+        <Container id="contact" sx={{ mt: 10, mr: '10px' }}>
             <Typography variant="h3" sx={{ textAlign: 'center', color: 'white', fontWeight: 600, mb: 5 }}>
                 Contact <span style={{ color: 'springgreen' }}>Me</span>
             </Typography>

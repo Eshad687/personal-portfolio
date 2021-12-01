@@ -13,13 +13,13 @@ const Projects = () => {
         navigate(`/${id}`);
     }
     return (
-        <Box sx={{ mt: 10 }}>
+        <Box id="projects" sx={{ mt: 10 }}>
             <Container>
                 <Typography variant="h3" sx={{ textAlign: 'center', color: 'white', fontWeight: 600 }}>
                     Featured <span style={{ color: 'springgreen' }}>Projects</span>
                 </Typography>
 
-                <Grid container spacing={2} sx={{ mt: 8 }} style={{ position: 'sticky', background: '#0e0e0f', height: '415px' }}  >
+                <Grid container spacing={2} sx={{ mt: 8 }} style={{ position: 'sticky', background: '#0e0e0f', height: '500px' }}  >
                     <Grid item xs={6}>
                         <img style={{ position: 'sticky' }} width="90%" height="380px" src={img1} alt="" />
                     </Grid>
@@ -34,7 +34,7 @@ const Projects = () => {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={2} style={{ position: 'sticky', background: '#0e0e0f', height: '415px', marginTop: '30px' }} >
+                <Grid container spacing={2} style={{ position: 'sticky', background: '#0e0e0f', height: '500px', marginTop: '30px' }} >
 
                     <Grid item xs={6}>
                         <Typography variant="h4" sx={{ color: 'white' }} >
@@ -49,7 +49,7 @@ const Projects = () => {
                         <img style={{ position: 'sticky' }} width="90%" height="380px" src={img2} alt="" />
                     </Grid>
                 </Grid>
-                <Grid container spacing={2} style={{ position: 'sticky', background: '#0e0e0f', height: '415px', marginTop: '30px' }}>
+                <Grid container spacing={2} style={{ position: 'sticky', background: '#0e0e0f', height: '500px', marginTop: '30px' }}>
                     <Grid item xs={6}>
                         <img style={{ position: 'sticky' }} width="90%" height="380px" src={img3} alt="" />
                     </Grid>
@@ -57,8 +57,8 @@ const Projects = () => {
                         <Typography variant="h4" sx={{ color: 'white' }} >
                             <span style={{ color: 'springgreen' }}>House General Hospital</span> Website
                         </Typography>
-                        <Typography variant="body1" sx={{ color: 'white' }} >
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat repudiandae eaque reiciendis eius, suscipit facere deleniti, ad ut, unde est. Esse ad architecto quae, sequi optio non atque fugit.
+                        <Typography variant="body1" sx={{ color: 'white', my: 3 }} >
+                            It is a React Website where non-user can see the home page and the doctors page. Users can login using either google sign in or email password sign in.
                         </Typography>
                         <CustomButton onClick={() => handleBookNow(2)}>View Details</CustomButton>
                     </Grid>

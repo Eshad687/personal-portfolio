@@ -78,21 +78,25 @@ const Navigation = () => {
 
             {/* FOR SMALL DEVICES */}
             <MenuItem>
-                <Button  > home </Button>
+                <Button  > <NavLink style={{ textDecoration: "none", color: "springgreen" }} to="/home">Home</NavLink></Button>
 
 
             </MenuItem>
             <MenuItem>
-                <Button  > About Me </Button>
+                <Button > <HashLink style={{ textDecoration: "none", color: "springgreen" }} to="/home#aboutMe">About Me</HashLink> </Button>
 
             </MenuItem>
             <MenuItem>
-                <Button  > Projects </Button>
+                <Button > <HashLink style={{ textDecoration: "none", color: "springgreen" }} to="/home#projects">Projects</HashLink> </Button>
 
             </MenuItem>
             <MenuItem>
-                <Button  > Contact Me </Button>
+                <Button > <HashLink style={{ textDecoration: "none", color: "springgreen" }} to="/home#contact">Contact Me</HashLink> </Button>
 
+            </MenuItem>
+            <MenuItem>
+
+                <Button  > <NavLink style={{ textDecoration: "none", color: "springgreen" }} to="/blogs">Blogs</NavLink></Button>
             </MenuItem>
 
 
@@ -112,8 +116,9 @@ const Navigation = () => {
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Button  > <NavLink style={{ textDecoration: "none", color: "#fff" }} to="/home">Home</NavLink></Button>
                         <Button > <HashLink style={{ textDecoration: "none", color: "#fff" }} to="/home#aboutMe">About Me</HashLink> </Button>
-                        <Button sx={{ color: 'white' }} > Projects </Button>
-                        <Button sx={{ color: 'white' }}> Contact Me </Button>
+                        <Button > <HashLink style={{ textDecoration: "none", color: "#fff" }} to="/home#projects">Projects</HashLink> </Button>
+                        <Button > <HashLink style={{ textDecoration: "none", color: "#fff" }} to="/home#contact">Contact Me</HashLink> </Button>
+                        <Button  > <NavLink style={{ textDecoration: "none", color: "#fff" }} to="/blogs">Blogs</NavLink></Button>
 
 
 
